@@ -4,7 +4,7 @@ import Avatar from '@mui/material/Avatar';
 import Stack from '@mui/material/Stack';
 import profilePhoto from "../../Assets/images/profile.jpg";
 import styles from "./profilePicture.module.css";
-import { useState, useRef, useEffect } from 'react'; // تأكد من استيراد useEffect
+import { useState, useRef, useEffect } from 'react';
 
 const ProfilePictures = () => {
     const [selectedImage, setSelectedImage] = useState(null);
@@ -35,12 +35,12 @@ const ProfilePictures = () => {
         }
     };
 
-  useEffect(() => { // <--- تم نقل useEffect إلى هنا
-    const storedImage = localStorage.getItem('profileImage');
-    if (storedImage) {
-        setSelectedImage(storedImage);
-    }
-  }, []); // مصفوفة الاعتماديات الفارغة تعني أن هذا التأثير سيتم تشغيله مرة واحدة فقط بعد أول عملية عرض للمكون
+    useEffect(() => {
+        const storedImage = localStorage.getItem('profileImage');
+        if (storedImage) {
+            setSelectedImage(storedImage);
+        }
+    }, []);
 
     return (
         <div>
@@ -48,19 +48,19 @@ const ProfilePictures = () => {
                 <Stack direction="row" spacing={2}>
                     <Avatar
                         className={`${styles["profile-photo"]}`}
-                        sx={{ width: 180, height: 180, cursor: 'pointer' }} // إضافة cursor للإشارة إلى إمكانية النقر
+                        sx={{ width: 180, height: 180, cursor: 'pointer' }}
                         alt="Profile photo"
-                        src={selectedImage || profilePhoto} // عرض الصورة المختارة أو الصورة الافتراضية
-                        onClick={handleAvatarClick} // ربط حدث الضغط بفتح مربع اختيار الملف
+                        src={selectedImage || profilePhoto} 
+                        onClick={handleAvatarClick}
                     />
                 </Stack>
             </div>
             <input
                 type="file"
-                accept="image/*" // السماح فقط بتحميل ملفات الصور
+                accept="image/*" 
                 onChange={handleImageChange}
-                style={{ display: 'block' }}
-                ref={fileInputRef} // ربط المرجع بعنصر الإدخال
+                style={{ display: 'hidden' }}
+                ref={fileInputRef} 
             />
             <button onClick={handleSaveImageLocally}>حفظ الصورة محليًا</button>
         </div>
