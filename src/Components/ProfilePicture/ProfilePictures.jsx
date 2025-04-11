@@ -25,13 +25,13 @@ const ProfilePictures = () => {
             const reader = new FileReader();
             reader.onloadend = () => {
             localStorage.setItem('profileImage', reader.result);
-            console.log('تم حفظ الصورة محليًا.');
+            console.log('Image saved');
             };
             fetch(selectedImage)
             .then(res => res.blob())
             .then(blob => reader.readAsDataURL(blob));
         } else {
-            console.warn('لم يتم اختيار أي صورة لحفظها محليًا.');
+            console.warn('No image selected to save');
         }
     };
 
@@ -48,21 +48,25 @@ const ProfilePictures = () => {
                 <Stack direction="row" spacing={2}>
                     <Avatar
                         className={`${styles["profile-photo"]}`}
-                        sx={{ width: 180, height: 180, cursor: 'pointer' }}
+                        sx={{ width: 179.82, height: 179.82, cursor: 'pointer'}}
                         alt="Profile photo"
                         src={selectedImage || profilePhoto} 
                         onClick={handleAvatarClick}
                     />
                 </Stack>
+                <div className={`${styles["content"]}`}>
+                    <h1>Coach Profile</h1>
+                    <p>Coach Bio</p>
+                </div>
             </div>
             <input
                 type="file"
                 accept="image/*" 
                 onChange={handleImageChange}
-                style={{ display: 'hidden' }}
+                style={{ display: 'none' }}
                 ref={fileInputRef} 
             />
-            <button onClick={handleSaveImageLocally}>حفظ الصورة محليًا</button>
+            <button style={{ display: 'none' }} onClick={handleSaveImageLocally}>Save</button>
         </div>
     );
 };
