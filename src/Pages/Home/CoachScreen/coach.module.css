@@ -1,10 +1,10 @@
 .main-profile {
-  width: 1050px;
   height: 403px;
   position: relative;
-  border-radius: 10px;
+
   margin-bottom: 0px;
   overflow: hidden;
+  background-color: var(--main-background-color);
 }
 .profile-background {
   width: 100%;
@@ -26,9 +26,14 @@
   text-transform: none;
   border-radius: 10px;
 }
-.container {
-  width: 1050px;
-}
 .aside-about {
   margin: 20px 0;
+}
+.main-container {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--main-background-color);
+}
+.styles {
+  background-color: var(--main-background-color);
 }

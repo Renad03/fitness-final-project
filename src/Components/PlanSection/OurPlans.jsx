@@ -1,5 +1,6 @@
 import React from 'react';
 import Heading from "../Heading/Heading";
+import Button from '@mui/material/Button';
 import styles from "./ourPlans.module.css"
 
 const OurPlans = () => {
@@ -39,7 +40,7 @@ const OurPlans = () => {
     ];
 
     return (
-        <div className={`${styles["plans-container"]} py-5 text-white w-75 mx-auto`}>
+        <div className={`${styles["plans-container"]} container py-5 text-white mx-auto`}>
             <Heading
                 headOne="Our"
                 headTwo="Plans"
@@ -50,7 +51,7 @@ const OurPlans = () => {
             <div className={`row row-cols-1 row-cols-md-3 g-4`}>
                 {monthlyPlans.map((plan) => (
                     <div key={plan.id} className={`${styles["plan-container"]} col`}>
-                        <div className={`${styles["plan-card"]} h-100 p-2 d-flex flex-column justify-content-between`}>
+                        <div className={`${styles["plan-card"]} h-100  d-flex flex-column justify-content-between`}>
                             <div className={`${styles["plan-header"]} text-center`}>
                                 <p className={`${styles.label}`}>Package</p>
                                 <h3 className= {`${styles["plan-title"]} fs-2`}>{plan.package}</h3>
@@ -67,11 +68,11 @@ const OurPlans = () => {
                             </div>
                             <div className={`plan-footer position-relative d-flex flex-column justify-content-between`}>
                                 <div className={`price-section text-center`}>
-                                    <span className={`${styles.price}`}>{plan.price}</span>
+                                    <span className={`${styles.price}`}>{plan.price}$</span>
                                     <sub className={`currency`}>/{plan.currency}</sub>
                                 </div>
                                 <div className={`text-center`}>
-                                <button className={`choose-plan-button my-2`}>Choose This Plan</button>
+                                    <Button sx={{color: "var(--white-color)",backgroundColor: "var(--red-main-color)", padding:1, textTransform: "none", margin:1 }} size="small">Choose This Plan</Button>
                                 </div>
                             </div>
                         </div>

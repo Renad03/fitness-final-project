@@ -4,6 +4,7 @@ import BackgroundPicture from '../../../Components/ProfileBackgroundPicture/Back
 import Button from '@mui/material/Button';
 import styles from "./coach.module.css"
 import ProfileAbout from '../../../Components/ProfileAbout/ProfileAbout';
+import CoachAchievements from '../../../Components/CoachAchievements/CoachAchievements';
 
 const Coach = () => {
 
@@ -27,12 +28,12 @@ const Coach = () => {
                     </div>
                     <div className={`${styles["contact-container"]}`}>
                     {/* <a href={link} className={`btn service-btn text-white position-absolute bottom-0 fs-6 p-3 mx-auto`}>Message</a> */}
-                    <Button className={`${styles["contact-container"]}`} variant="text">Message</Button>
+                        <Button sx={{color: "var(--white-color)",backgroundColor: "var(--red-main-color)", padding:1, textTransform: "none" }} size="small">Message</Button>
                     </div>
                 </div>
             </header>
             <main>
-                <div className={`${styles["container"]} container`}>
+                <div className={`container ${styles["main-container"]}`}>
                     <div className={`${styles["aside-about"]}`}>
                         <ProfileAbout 
                             gender={aboutData.gender}
@@ -42,8 +43,15 @@ const Coach = () => {
                             phone={aboutData.phone}
                         />
                     </div>
+                    <div className={`${styles["container"]}`}>
+                        <CoachAchievements />
+                    </div>
+                </div>
+                <div className={`${styles["other-coaches"]} container`}>
+                    <h2>Other Coaches from coaches component</h2>
                 </div>
             </main>
+            
         </div>
     )
 }

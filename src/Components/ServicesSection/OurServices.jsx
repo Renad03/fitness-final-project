@@ -38,7 +38,7 @@ const services = [
 
 const OurServices = () => {
     return (
-        <div className={`${styles["service-container"]} py-2 text-center text-white w-75 mx-auto`}>
+        <div className={`${styles["service-container"]} container py-2 text-center text-white mx-auto`}>
             <Heading 
             headOne="Our" 
             headTwo="Services" 

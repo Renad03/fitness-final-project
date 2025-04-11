@@ -1,10 +1,5 @@
 .plans-container {
-  background-image: radial-gradient(
-    100%,
-    var(--red-main-color) 5%,
-    var(--orange-main-color) 50%,
-    var(--main-background-color) 100%
-  );
+  background-color: var(--main-background-color);
 }
 .plan-card p.label {
   color: var(--orange-main-color);
