@@ -33,7 +33,7 @@ const Coach = () => {
                 </div>
             </header>
             <main>
-                <div className={`container ${styles["main-container"]}`}>
+                <div className={`container ${styles["main-container"]} d-flex justify-content-between`}>
                     <div className={`${styles["aside-about"]}`}>
                         <ProfileAbout 
                             gender={aboutData.gender}

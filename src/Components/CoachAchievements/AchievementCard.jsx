@@ -25,7 +25,7 @@ const AchievementCard = (props) => {
                 <Typography sx={{color: "var(--red-main-color)"}} gutterBottom variant="h5" component="div">
                     {props.title}
                 </Typography>
-                <Typography variant="body2" sx={{ color: "var(--red-main-color)"}}>
+                <Typography variant="body2" sx={{ color: "var(--white-color)"}}>
                     {props.description}
                 </Typography>
             </CardContent>

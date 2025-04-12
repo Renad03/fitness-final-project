@@ -1,10 +1,10 @@
 .profile-about-container {
-  border: 2px solid var(--red-main-color);
+  border: 1px solid var(--red-main-color);
   padding: 20px 15px;
   background-color: var(--main-background-color);
   border-radius: 10px;
   width: 260px;
-  height: 300px;
+  height: 310px;
 }
 
 .about-title {
@@ -29,5 +29,5 @@
 .info-text {
   margin-top: 10px;
   font-size: var(--fontSize-3);
-  color: var(--red-main-color);
+  color: var(--white-color);
 }
