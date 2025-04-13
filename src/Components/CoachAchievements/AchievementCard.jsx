@@ -5,28 +5,30 @@ import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
+import AchieveImageBefore from "../../Assets/images/service-1.jpg"
+import AchieveImageAfter from "../../Assets/images/service-2.jpg"
 
-const AchievementCard = (props) => {
+const AchievementCard = ({achievement}) => {
     return (
         <Card  sx={ {maxWidth: 300, backgroundColor: "var(--main-background-color)", border:"1px solid var(--red-main-color)" }}>
             <div className={`d-flex justify-content-between`}>
                 <CardMedia
                     sx={{ height: 140, width: 145  }}
-                    image={props.imageBefore}
+                    image={AchieveImageBefore}
                     title="green iguana"
                 />
                 <CardMedia
                     sx={{ height: 140, width: 145 }}
-                    image={props.imageAfter}
+                    image={AchieveImageAfter}
                     title="green iguana"
                 />
             </div>
             <CardContent>
                 <Typography sx={{color: "var(--red-main-color)"}} gutterBottom variant="h5" component="div">
-                    {props.title}
+                    {achievement.name}
                 </Typography>
                 <Typography variant="body2" sx={{ color: "var(--white-color)"}}>
-                    {props.description}
+                    {achievement.desc}
                 </Typography>
             </CardContent>
             <CardActions>

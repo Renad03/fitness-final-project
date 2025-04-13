@@ -2,11 +2,10 @@
 import * as React from 'react';
 import Avatar from '@mui/material/Avatar';
 import Stack from '@mui/material/Stack';
-import profilePhoto from "../../Assets/images/profile.jpg";
 import styles from "./profilePicture.module.css";
 import { useState, useRef, useEffect } from 'react';
 
-const ProfilePictures = () => {
+const ProfilePictures = ({profilePhoto , coachName , coachBio}) => {
     const [selectedImage, setSelectedImage] = useState(null);
     const fileInputRef = useRef(null);
 
@@ -55,8 +54,8 @@ const ProfilePictures = () => {
                     />
                 </Stack>
                 <div className={`${styles["content"]}`}>
-                    <h1>Coach Profile</h1>
-                    <p>Coach Bio</p>
+                    <h1>{coachName}</h1>
+                    <p>{coachBio}</p>
                 </div>
             </div>
             <input

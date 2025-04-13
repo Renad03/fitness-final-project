@@ -6,12 +6,12 @@ import AccordionSection from "../../Components/Accordion/AccordionSection";
 
 const Home = () => {
   return (
-    <div>
+    <>
       <OurServices />
       <OurPlans />
       <SliderSection />
       <AccordionSection />
-    </div>
+    </>
   );
 };
 

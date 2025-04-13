@@ -17,56 +17,67 @@ import {
 
 const items = [
   {
+    id: 1,
     name: "Sam Cole",
     role: "Personal Trainer",
     imgSrc: gym1,
   },
   {
+    id: 2,
     name: "John Doe",
     role: "Yoga Instructor",
     imgSrc: gym2,
   },
   {
+    id: 3,
     name: "Jane Smith",
     role: "Nutrition Expert",
     imgSrc: gym3,
   },
   {
+    id: 4,
     name: "Mike Johnson",
     role: "Physical Therapist",
     imgSrc: gym4,
   },
   {
+    id: 5,
     name: "Laura Brown",
     role: "Health Coach",
     imgSrc: gym1,
   },
   {
+    id: 6,
     name: "Emma White",
     role: "Fitness Specialist",
     imgSrc: gym2,
   },
   {
+    id: 7,
     name: "Chris Green",
     role: "Strength Coach",
     imgSrc: gym3,
   },
   {
+    id: 8,
     name: "Olivia Lee",
     role: "Pilates Expert",
     imgSrc: gym4,
   },
   {
+    id: 9,
     name: "Stan Lee",
     role: "Pilates Expert",
     imgSrc: gym1,
   },
   {
+    id: 10,
     name: "Robert Di Nero",
     role: "Pilates Expert",
     imgSrc: gym2,
   },
   {
+    id: 11,
     name: "Chris Evans",
     role: "Pilates Expert",
     imgSrc: gym3,
