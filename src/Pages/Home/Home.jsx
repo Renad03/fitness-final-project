@@ -3,11 +3,13 @@ import OurServices from "../../Components/ServicesSection/OurServices";
 import OurPlans from "../../Components/PlanSection/OurPlans";
 import SliderSection from "../../Components/Slider/Slider";
 import AccordionSection from "../../Components/Accordion/AccordionSection";
-import Footer from "../../Components/Frame462/Footer";
+import Header from "../../Components/Header/Header";
+import Footer from "../../Components/Footer/Footer";
 
 const Home = () => {
   return (
     <div>
+      <Header />
       <OurServices />
       <OurPlans />
       <SliderSection />

@@ -1,0 +1,27 @@
+.fitmaker-navbar {
+    background-color: transparent !important;
+  }
+  
+  .fitmaker-logo {
+    background-color: #dc3545;
+    height: 30px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 2px;
+    font-size: 0.9rem;
+  }
+  
+  .active-link {
+    border-bottom: 2px solid #dc3545 !important;
+    padding-bottom: 0.5rem !important;
+  }
+  
+  @media (max-width: 991px) {
+    .navbar-collapse {
+      background-color: rgba(0, 0, 0, 0.85);
+      padding: 1rem;
+      margin: 0 -12px;
+    }
+  }
