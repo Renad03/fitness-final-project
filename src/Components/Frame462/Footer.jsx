@@ -17,8 +17,8 @@ const Footer = () => {
               <div className="logo-box me-2"></div>
               <h4 className="mb-0">Fit<span className="text-danger">Maker</span></h4>
             </div>
-            <p className="small text-muted mb-2">Transform Your Body</p>
-            <p className="text-muted small">
+            <p className="text-light">Transform Your Body</p>
+            <p  className="text-light">
               Transform Your Body with FitMaker, Your Trusted Partner in Fitness. With Over 
               <span className="text-danger"> 5 Years </span>
               of Experience, We Offer Expert Coaching, Tailored Workout Plans, and Comprehensive Nutritional Guidance. 
@@ -36,12 +36,12 @@ const Footer = () => {
           <div className="col-md-2 mb-4">
             <h6 className="text-danger mb-3">Company</h6>
             <ul className="list-unstyled text-muted small">
-              <li>About Us</li>
-              <li>Our Services</li>
-              <li>Careers</li>
-              <li>Blog</li>
-              <li>Testimonial</li>
-              <li>Contact Us</li>
+              <li className="text-light">About Us</li>
+              <li className="text-light">Our Services</li>
+              <li className="text-light">Careers</li>
+              <li className="text-light">Blog</li>
+              <li className="text-light">Testimonial</li>
+              <li className="text-light">Contact Us</li>
             </ul>
           </div>
 
@@ -49,12 +49,12 @@ const Footer = () => {
           <div className="col-md-2 mb-4">
             <h6 className="text-danger mb-3">Resources</h6>
             <ul className="list-unstyled text-muted small">
-              <li>Fitness Tools</li>
-              <li>Workout Videos</li>
-              <li>Nutrition Guides</li>
-              <li>FAQ</li>
-              <li>Success Stories</li>
-              <li>Membership</li>
+              <li className="text-light">Fitness Tools</li>
+              <li className="text-light">Workout Videos</li>
+              <li className="text-light">Nutrition Guides</li>
+              <li className="text-light">FAQ</li>
+              <li className="text-light">Success Stories</li>
+              <li className="text-light">Membership</li>
             </ul>
           </div>
 
@@ -62,12 +62,12 @@ const Footer = () => {
           <div className="col-md-2 mb-4">
             <h6 className="text-danger mb-3">Programs</h6>
             <ul className="list-unstyled text-muted small">
-              <li>Weight Loss</li>
-              <li>Building Muscles</li>
-              <li>Home Workout</li>
-              <li>Gym Plan</li>
-              <li>Our Plans</li>
-              <li>Fitness Group</li>
+              <li className="text-light">Weight Loss</li>
+              <li className="text-light">Building Muscles</li>
+              <li className="text-light">Home Workout</li>
+              <li className="text-light">Gym Plan</li>
+              <li className="text-light">Our Plans</li>
+              <li className="text-light">Fitness Group</li>
             </ul>
           </div>
 
@@ -75,9 +75,9 @@ const Footer = () => {
           <div className="col-md-2 mb-4">
             <h6 className="text-warning mb-3">Contact Us</h6>
             <ul className="list-unstyled text-muted small">
-              <li><FaMapMarkerAlt className="me-2" /> USA - Washington DC</li>
-              <li><FaPhone className="me-2" /> 1234-56789</li>
-              <li><FaEnvelope className="me-2" /> Fitmakerrr@Gmail.Com</li>
+              <li className="text-light"><FaMapMarkerAlt className="me-2" /> USA - Washington DC</li>
+              <li className="text-light"><FaPhone className="me-2" /> 1234-56789</li>
+              <li className="text-light"><FaEnvelope className="me-2" /> Fitmakerrr@Gmail.Com</li>
             </ul>
           </div>
         </div>
