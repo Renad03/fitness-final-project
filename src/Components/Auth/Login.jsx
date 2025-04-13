@@ -1,7 +1,9 @@
 // src/components/Auth/Login.jsx
 import React, { useState } from 'react';
-import { FaGoogle, FaEnvelope, FaLock } from 'react-icons/fa';
-import '../styles/auth.css'; // استيراد ملف الـ CSS
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faEnvelope, faLock } from '@fortawesome/free-solid-svg-icons';
+import { faGoogle } from '@fortawesome/free-brands-svg-icons';
+import './auth.css'; // استيراد ملف الـ CSS
 
 function Login() {
   const [email, setEmail] = useState('');
@@ -16,7 +18,7 @@ function Login() {
     <div className="container">
       <h2>Login</h2>
       <div className="input-box">
-        <FaEnvelope className="icon" />
+        <FontAwesomeIcon icon={faEnvelope} className="icon" />
         <input 
           type="email" 
           placeholder="Enter Your E-Mail" 
@@ -25,7 +27,7 @@ function Login() {
         />
       </div>
       <div className="input-box">
-        <FaLock className="icon" />
+        <FontAwesomeIcon icon={faLock} className="icon" />
         <input 
           type="password" 
           placeholder="Enter Your Password" 
@@ -38,7 +40,7 @@ function Login() {
         <span>Or</span>
       </div>
       <button className="google-btn">
-        <FaGoogle />
+        <FontAwesomeIcon icon={faGoogle} />
         Login with Google
       </button>
     </div>
