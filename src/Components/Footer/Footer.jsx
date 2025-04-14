@@ -4,7 +4,6 @@ import {
     FaMapMarkerAlt, FaPhone, FaEnvelope 
 } from "react-icons/fa";
 import { SiX } from "react-icons/si";
-import './Footer.module.css';
 
 const Footer = () => {
   return (
@@ -36,12 +35,12 @@ const Footer = () => {
           <div className="col-md-2 mb-4">
             <h6 className="text-danger mb-3">Company</h6>
             <ul className="list-unstyled text-muted small">
-              <li className="text-light">About Us</li>
-              <li className="text-light">Our Services</li>
-              <li className="text-light">Careers</li>
-              <li className="text-light">Blog</li>
-              <li className="text-light">Testimonial</li>
-              <li className="text-light">Contact Us</li>
+              <li><a className="text-light" href="#AboutUs">About Us</a></li>
+              <li><a className="text-light" href="#Services">Our Services</a></li>
+              <li><a className="text-light" href="#Careers">Careers</a></li>
+              <li><a className="text-light" href="#Blog">Blog</a></li>
+              <li><a className="text-light" href="#Testimonial">Testimonial</a></li>
+              <li><a className="text-light" href="#ContactUs">Contact Us</a></li>
             </ul>
           </div>
 
