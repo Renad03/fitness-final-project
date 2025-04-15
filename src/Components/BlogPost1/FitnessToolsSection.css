@@ -1,0 +1,85 @@
+/* FitnessToolsSection.css */
+
+.fitness-tools-section {
+    margin-left: 70px;
+    margin-top: 80px;
+    background-color: #1e1e1e;
+    color: #fff;
+    padding: 40px;
+    position: relative;
+  }
+  
+  .header-container {
+    margin-bottom: 20px;
+    position: absolute;
+    top: -40px;
+    left: 40px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  .main-heading {
+    text-align: left;
+    margin-top: 0;
+    margin-bottom: 5px;
+    
+    margin-left: 50px;
+    font-size: 1.8em;
+    font-weight: bold;
+  }
+  
+  .main-heading .tools-red {
+    color: red;
+  }
+  
+  .sub-heading {
+    color: #ccc;
+    text-align: left;
+    margin-top: 0;
+    margin-left: 330px;
+    margin-bottom: 20px;
+    font-size: 0.9em;
+  }
+  
+  .card-container {
+    display: flex;
+    gap: 20px;
+    justify-content: flex-start; 
+    flex-wrap: nowrap; 
+    overflow-x: auto; 
+    padding-left: 40px; 
+    padding-right: 40px; 
+    box-sizing: border-box; 
+  }
+  
+  .fitness-tool-card {
+    
+    background-color: #2c2c2c;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    width: 255px; 
+    flex-shrink: 0; 
+  }
+  
+  .fitness-tool-card .icon {
+    font-size: 3em;
+    margin-bottom: 10px;
+    color: #f44336;
+  }
+  
+  .fitness-tool-card .title {
+    margin-bottom: 10px;
+    font-size: 1.2em;
+  }
+  
+  .fitness-tool-card .learn-more {
+    display: inline-block;
+    color: #f44336;
+    text-decoration: none;
+    margin-top: 10px;
+  }
+  
+  .fitness-tool-card .learn-more:hover {
+    text-decoration: underline;
+  }
