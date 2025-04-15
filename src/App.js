@@ -10,25 +10,30 @@ import {
 import Coach from "./Pages/Home/CoachScreen/Coach";
 import Login from './Components/Auth/Login';
 import SignUp from './Components/Auth/signup';
+import Layout from "./Components/Layout";
 
-const routes = createBrowserRouter([
-  {
-    path: "/",
-    element: <Home />,
-  },
-  {
-    path: "/coach/:id",
-    element: <Coach />,
-  },
-  {
-    path: "/login",
-    element: <Login />,
-  },
-  {
-    path: "/signup",
-    element: <SignUp />,
-  },
-]);
+const routes = createBrowserRouter([{
+  path: '/',
+  element: <Layout/>,
+  children: [
+    {
+      path: "",
+      element: <Home />,
+    },
+    {
+      path: "coach/:id",
+      element: <Coach />,
+    },
+    {
+      path: "login",
+      element: <Login />,
+    },
+    {
+      path: "signup",
+      element: <SignUp />,
+    },
+  ]
+}]);
 
 function App() {
   return <RouterProvider router={routes} />;

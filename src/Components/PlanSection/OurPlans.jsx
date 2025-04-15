@@ -40,7 +40,7 @@ const OurPlans = () => {
     ];
 
     return (
-        <div className={`${styles["plans-container"]} container py-5 text-white mx-auto`}>
+        <div id="programs" className={`${styles["plans-container"]} container py-5 text-white mx-auto`}>
             <Heading
                 headOne="Our"
                 headTwo="Plans"
