@@ -1,6 +1,6 @@
 import React from "react";
 import { Button, Container, Row, Col } from "react-bootstrap";
-import fitMan from "../assets/img.png";
+import fitMan from "../../Assets/images/fitman.png.jpg";
 
 const Hero = () => {
   return (
