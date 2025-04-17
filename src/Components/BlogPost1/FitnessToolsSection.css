@@ -65,6 +65,7 @@
   .fitness-tool-card .icon {
     font-size: 3em;
     margin-bottom: 10px;
+    margin-left: -20px;
     color: #f44336;
   }
   

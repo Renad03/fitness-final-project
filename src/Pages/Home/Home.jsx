@@ -19,7 +19,9 @@ const Home = () => {
       <OurPlans />
       <SliderSection />
       <AccordionSection />
-    </>
+      <FitnessToolsSection />
+      <Testimonial/>
+      </div>
   );
 };
 
