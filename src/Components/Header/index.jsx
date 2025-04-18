@@ -1,24 +1,10 @@
 import React from 'react';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import { Navbar, Nav, Container, Button, NavDropdown, NavItem } from 'react-bootstrap';
-import { Search } from 'react-bootstrap-icons'; // Import search icon
-import '../Header/styles.css';
-import SliderSection from '../Slider/Slider';
-import OurPlans from "../../Components/PlanSection/OurPlans";
-import AboutUs from '../AboutUs';
-import Home from '../../Pages/Home/Home';
-import { Link } from 'react-router-dom';
-
+import { Navbar, Nav, Container, Button, NavDropdown} from 'react-bootstrap';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-
-<Router>
-  <Routes>
-    <Route path="" element={<Home />} />
-    <Route path="/trainers" element={<SliderSection />} />
-    <Route path="/our-plans" element={<OurPlans />} />
-    <Route path="/about-us" element={<AboutUs />} />
-  </Routes>
-</Router>
+import { Link } from 'react-router-dom';
+import { Search } from 'react-bootstrap-icons';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import '../Header/styles.css';
 
 
 const FitMakerHeader = () => {
@@ -49,7 +35,7 @@ const FitMakerHeader = () => {
           <Nav.Link as={Link} to={""} className="text-white border-bottom border-danger mx-5">Home</Nav.Link>
 
           <NavDropdown title="Programs" id="programs-dropdown" className="mx-5 programs-dropdown">
-            <NavDropdown.Item href="#program1">Weight Loss</NavDropdown.Item>
+            <NavDropdown.Item as={Link} to={"/weight-loss"}>Weight Loss</NavDropdown.Item>
             <NavDropdown.Item href="#program2">Building Muscles</NavDropdown.Item>
             <NavDropdown.Item href="#program3">Home Workout</NavDropdown.Item>
             <NavDropdown.Item href="#program4">Gym Plan</NavDropdown.Item>

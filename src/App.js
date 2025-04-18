@@ -15,6 +15,7 @@ import DashboardHome from "./Components/Dashboard/DashboardHome/DashboardHome";
 import OurPlans from "./Components/PlanSection/OurPlans";
 import SliderSection from "./Components/Slider/Slider";
 import AboutUs from "./Components/AboutUs";
+import WeightLossProgram from "./Components/WeightLoss";
 
 const routes = createBrowserRouter([
   {
@@ -48,6 +49,10 @@ const routes = createBrowserRouter([
       {
         path: "about-us",
         element: <AboutUs />,
+      },
+      {
+        path: "weight-loss",
+        element: <WeightLossProgram />,
       },
     ],
   },
