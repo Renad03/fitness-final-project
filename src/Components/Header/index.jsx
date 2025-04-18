@@ -6,12 +6,14 @@ import '../Header/styles.css';
 import SliderSection from '../Slider/Slider';
 import OurPlans from "../../Components/PlanSection/OurPlans";
 import AboutUs from '../AboutUs';
+import Home from '../../Pages/Home/Home';
 import { Link } from 'react-router-dom';
 
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 <Router>
   <Routes>
+    <Route path="" element={<Home />} />
     <Route path="/trainers" element={<SliderSection />} />
     <Route path="/our-plans" element={<OurPlans />} />
     <Route path="/about-us" element={<AboutUs />} />
@@ -44,7 +46,7 @@ const FitMakerHeader = () => {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="mx-auto">
-          <Nav.Link href="#home" className="text-white border-bottom border-danger mx-5">Home</Nav.Link>
+          <Nav.Link as={Link} to={""} className="text-white border-bottom border-danger mx-5">Home</Nav.Link>
 
           <NavDropdown title="Programs" id="programs-dropdown" className="mx-5 programs-dropdown">
             <NavDropdown.Item href="#program1">Weight Loss</NavDropdown.Item>

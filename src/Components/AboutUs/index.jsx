@@ -1,6 +1,5 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "./styles.css"; // You can keep this for custom styles if needed
 
 const AboutUs = () => {
     return (
