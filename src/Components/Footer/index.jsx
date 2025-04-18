@@ -4,6 +4,8 @@ import {
     FaMapMarkerAlt, FaPhone, FaEnvelope 
 } from "react-icons/fa";
 import { SiX } from "react-icons/si";
+import { Link } from 'react-router-dom';
+
 
 const Footer = () => {
   return (
@@ -35,12 +37,12 @@ const Footer = () => {
           <div className="col-md-2 mb-4">
             <h6 className="text-danger mb-3">Company</h6>
             <ul className="list-unstyled text-muted small">
-              <li><a className="text-light" href="#AboutUs">About Us</a></li>
-              <li><a className="text-light" href="#Services">Our Services</a></li>
-              <li><a className="text-light" href="#Careers">Careers</a></li>
-              <li><a className="text-light" href="#Blog">Blog</a></li>
-              <li><a className="text-light" href="#Testimonial">Testimonial</a></li>
-              <li><a className="text-light" href="#ContactUs">Contact Us</a></li>
+              <li><Link className="text-light" to={'/about-us'}>About Us</Link></li>
+              <li><Link className="text-light" to={'/our-services'}>Our Services</Link></li>
+              <li><Link className="text-light" to={''}>Careers</Link></li>
+              <li><Link className="text-light" to={''}>Blog</Link></li>
+              <li><Link className="text-light" to={''}>Testimonial</Link></li>
+              <li><Link className="text-light" to={''}>Contact Us</Link></li>
             </ul>
           </div>
 
@@ -48,12 +50,12 @@ const Footer = () => {
           <div className="col-md-2 mb-4">
             <h6 className="text-danger mb-3">Resources</h6>
             <ul className="list-unstyled text-muted small">
-              <li className="text-light">Fitness Tools</li>
-              <li className="text-light">Workout Videos</li>
-              <li className="text-light">Nutrition Guides</li>
-              <li className="text-light">FAQ</li>
-              <li className="text-light">Success Stories</li>
-              <li className="text-light">Membership</li>
+              <li> <Link  className="text-light" to={''}>Fitness Tools</Link></li>
+              <li> <Link  className="text-light" to={''}>Workout Videos</Link></li>
+              <li> <Link  className="text-light" to={''}>Nutrition Guides</Link></li>
+              <li> <Link  className="text-light" to={'/faq'}>FAQ</Link></li>
+              <li> <Link  className="text-light" to={''}>Success Stories</Link></li>
+              <li> <Link  className="text-light" to={''}>Membership</Link></li>
             </ul>
           </div>
 
@@ -61,12 +63,12 @@ const Footer = () => {
           <div className="col-md-2 mb-4">
             <h6 className="text-danger mb-3">Programs</h6>
             <ul className="list-unstyled text-muted small">
-              <li className="text-light">Weight Loss</li>
-              <li className="text-light">Building Muscles</li>
-              <li className="text-light">Home Workout</li>
-              <li className="text-light">Gym Plan</li>
-              <li className="text-light">Our Plans</li>
-              <li className="text-light">Fitness Group</li>
+              <li> <Link className="text-light" to={'/weight-loss'}>Weight Loss</Link></li>
+              <li> <Link className="text-light" to={'/building-muscles'}>Building Muscles</Link></li>
+              <li> <Link className="text-light" to={'/home-workout'}>Home Workout</Link></li>
+              <li> <Link className="text-light" to={'/gym-plan'}>Gym Plan</Link></li>
+              <li> <Link className="text-light" to={'/our-plans'}>Our Plans</Link></li>
+              <li> <Link className="text-light" to={'/fitness-group'}>Fitness Group</Link></li>
             </ul>
           </div>
 

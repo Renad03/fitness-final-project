@@ -20,6 +20,8 @@ import BuildingMusclesProgram from "./Components/BuildingMuscles";
 import HomeWorkoutProgram from "./Components/HomeWorkout";
 import GymPlanProgram from "./Components/GymPlan";
 import FitnessGroupProgram from "./Components/FitnessGroup";
+import AccordionSection from "./Components/Accordion/AccordionSection";
+import OurServices from "./Components/ServicesSection/OurServices";
 
 const routes = createBrowserRouter([
   {
@@ -73,6 +75,14 @@ const routes = createBrowserRouter([
       {
         path: "fitness-group",
         element: <FitnessGroupProgram />,
+      },
+      {
+        path: "faq",
+        element: <AccordionSection />,
+      },
+      {
+        path: "our-services",
+        element: <OurServices />,
       },
     ],
   },
