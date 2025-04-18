@@ -12,6 +12,9 @@ import Login from "./Components/Auth/Login";
 import SignUp from "./Components/Auth/signup";
 import Layout from "./Components/Layout";
 import DashboardHome from "./Components/Dashboard/DashboardHome/DashboardHome";
+import OurPlans from "./Components/PlanSection/OurPlans";
+import SliderSection from "./Components/Slider/Slider";
+import AboutUs from "./Components/AboutUs";
 
 const routes = createBrowserRouter([
   {
@@ -33,6 +36,18 @@ const routes = createBrowserRouter([
       {
         path: "signup",
         element: <SignUp />,
+      },
+      {
+        path: "our-plans",
+        element: <OurPlans />,
+      },
+      {
+        path: "trainers",
+        element: <SliderSection />,
+      },
+      {
+        path: "about-us",
+        element: <AboutUs />,
       },
     ],
   },
