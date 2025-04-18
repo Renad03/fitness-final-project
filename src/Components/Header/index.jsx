@@ -39,8 +39,8 @@ const FitMakerHeader = () => {
             <NavDropdown.Item as={Link} to={"/building-muscles"}>Building Muscles</NavDropdown.Item>
             <NavDropdown.Item as={Link} to={"/home-workout"}>Home Workout</NavDropdown.Item>
             <NavDropdown.Item as={Link} to={"/gym-plan"}>Gym Plan</NavDropdown.Item>
-            <NavDropdown.Item as={Link} to="/our-plans">Our Plans</NavDropdown.Item>
-            <NavDropdown.Item href="">Fitness Group</NavDropdown.Item>
+            <NavDropdown.Item as={Link} to={"/our-plans"}>Our Plans</NavDropdown.Item>
+            <NavDropdown.Item as={Link} to={"/fitness-group"}>Fitness Group</NavDropdown.Item>
           </NavDropdown>
 
           <NavDropdown title="Coaching" id="programs-dropdown" className="mx-5 programs-dropdown">
