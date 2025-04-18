@@ -10,7 +10,7 @@ const GymPlanProgram = () => {
         {/* Hero Section */}
         <Row className="mb-5">
           <Col>
-            <div className="bg-dark text-white p-5 rounded shadow position-relative">
+            <div className="text-white p-5 rounded position-relative">
               <h1 className="text-center display-4 mb-3">
                 <Diagram3Fill className="me-2" />
                 Gym Plan
