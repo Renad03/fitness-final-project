@@ -8,32 +8,44 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import Coach from "./Pages/Home/CoachScreen/Coach";
-import Login from './Components/Auth/Login';
-import SignUp from './Components/Auth/signup';
+import Login from "./Components/Auth/Login";
+import SignUp from "./Components/Auth/signup";
 import Layout from "./Components/Layout";
+import DashboardHome from "./Components/Dashboard/DashboardHome/DashboardHome";
 
-const routes = createBrowserRouter([{
-  path: '/',
-  element: <Layout/>,
-  children: [
-    {
-      path: "",
-      element: <Home />,
-    },
-    {
-      path: "coach/:id",
-      element: <Coach />,
-    },
-    {
-      path: "login",
-      element: <Login />,
-    },
-    {
-      path: "signup",
-      element: <SignUp />,
-    },
-  ]
-}]);
+const routes = createBrowserRouter([
+  {
+    path: "/",
+    element: <Layout />,
+    children: [
+      {
+        path: "",
+        element: <Home />,
+      },
+      {
+        path: "coach/:id",
+        element: <Coach />,
+      },
+      {
+        path: "login",
+        element: <Login />,
+      },
+      {
+        path: "signup",
+        element: <SignUp />,
+      },
+    ],
+  },
+  {
+    path: "/dashboard",
+    children: [
+      {
+        path: "home",
+        element: <DashboardHome />,
+      },
+    ],
+  },
+]);
 
 function App() {
   return <RouterProvider router={routes} />;
