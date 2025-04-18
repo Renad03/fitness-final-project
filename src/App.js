@@ -18,6 +18,7 @@ import AboutUs from "./Components/AboutUs";
 import WeightLossProgram from "./Components/WeightLoss";
 import BuildingMusclesProgram from "./Components/BuildingMuscles";
 import HomeWorkoutProgram from "./Components/HomeWorkout";
+import GymPlanProgram from "./Components/GymPlan";
 
 const routes = createBrowserRouter([
   {
@@ -63,6 +64,10 @@ const routes = createBrowserRouter([
       {
         path: "home-workout",
         element: <HomeWorkoutProgram />,
+      },
+      {
+        path: "gym-plan",
+        element: <GymPlanProgram />,
       },
     ],
   },
