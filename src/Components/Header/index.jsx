@@ -70,27 +70,13 @@ const FitMakerHeader = () => {
               </NavDropdown.Item>
             </NavDropdown>
 
-            <NavDropdown
-              title="Coaching"
-              id="programs-dropdown"
-              className="mx-5 programs-dropdown"
-            >
-              <NavDropdown.Item href="#program1">
-                1-on-1 Coaching
-              </NavDropdown.Item>
-              <NavDropdown.Item href="#program2">
-                Group Coaching
-              </NavDropdown.Item>
-              <NavDropdown.Item href="#program3">
-                Online Coaching
-              </NavDropdown.Item>
-              <NavDropdown.Item href="#program4">
-                Nutrition Coaching
-              </NavDropdown.Item>
+            <NavDropdown title="Coaching" id="programs-dropdown" className="mx-5 programs-dropdown">
+              <NavDropdown.Item as={Link} to={"/one-on-one-coaching"}>1-on-1 Coaching</NavDropdown.Item>
+              <NavDropdown.Item href="#program2">Group Coaching</NavDropdown.Item>
+              <NavDropdown.Item href="#program3">Online Coaching</NavDropdown.Item>
+              <NavDropdown.Item href="#program4">Nutrition Coaching</NavDropdown.Item>
               <NavDropdown.Divider />
-              <NavDropdown.Item as={Link} to="/trainers">
-                Meet Our Coaches
-              </NavDropdown.Item>
+              <NavDropdown.Item as={Link} to="/trainers">Meet Our Coaches</NavDropdown.Item>
             </NavDropdown>
 
             <Nav.Link href="#membership" className="text-white-50 mx-5">

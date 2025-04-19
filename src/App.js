@@ -22,6 +22,7 @@ import GymPlanProgram from "./Components/GymPlan";
 import FitnessGroupProgram from "./Components/FitnessGroup";
 import AccordionSection from "./Components/Accordion/AccordionSection";
 import OurServices from "./Components/ServicesSection/OurServices";
+import OneOnOneCoaching from "./Components/OneOnOneCoaching";
 
 const routes = createBrowserRouter([
   {
@@ -83,6 +84,10 @@ const routes = createBrowserRouter([
       {
         path: "our-services",
         element: <OurServices />,
+      },
+      {
+        path: "one-on-one-coaching",
+        element: <OneOnOneCoaching />,
       },
     ],
   },
