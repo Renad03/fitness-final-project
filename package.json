@@ -54,6 +54,7 @@
     ]
   },
   "devDependencies": {
+    "gh-pages": "^6.3.0",
     "madge": "^8.0.0"
   }
 }
