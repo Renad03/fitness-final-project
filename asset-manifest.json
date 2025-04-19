@@ -1,0 +1,38 @@
+{
+  "files": {
+    "main.css": "/fitness-final-project/static/css/main.19cdedd3.css",
+    "main.js": "/fitness-final-project/static/js/main.a82caf58.js",
+    "static/media/gym-training.png": "/fitness-final-project/static/media/gym-training.d6b11bd9344c819dcbee.png",
+    "static/media/fitness-group.png": "/fitness-final-project/static/media/fitness-group.4c274eb0054c86c627ac.png",
+    "static/media/nutrition-coaching.png": "/fitness-final-project/static/media/nutrition-coaching.712ddcb02cf932449347.png",
+    "static/media/home-workout.png": "/fitness-final-project/static/media/home-workout.1672420603c85f9eca82.png",
+    "static/media/1on1Coaching.png": "/fitness-final-project/static/media/1on1Coaching.30440f45f4e7e1a67d01.png",
+    "static/media/online-coaching.png": "/fitness-final-project/static/media/online-coaching.58ca2c66878ba57f7a39.png",
+    "static/media/group-training.png": "/fitness-final-project/static/media/group-training.9692c6b2d749d3e15ccb.png",
+    "static/media/bootstrap-icons.woff?": "/fitness-final-project/static/media/bootstrap-icons.39795c0b4513de014cf8.woff",
+    "static/media/bootstrap-icons.woff2?": "/fitness-final-project/static/media/bootstrap-icons.b7bcc075b395c14ce8c2.woff2",
+    "static/media/steven-haward.png": "/fitness-final-project/static/media/steven-haward.8e834670b7fc6f7034e1.png",
+    "static/media/gym4.png": "/fitness-final-project/static/media/gym4.4a0391a4d5dd722e7fd4.png",
+    "static/media/gym1.png": "/fitness-final-project/static/media/gym1.b776867521ecd8810f93.png",
+    "static/media/service-3.jpg": "/fitness-final-project/static/media/service-3.8ca1b50bda3ca571b032.jpg",
+    "static/media/service-2.jpg": "/fitness-final-project/static/media/service-2.c9b64f62ecfa581485dd.jpg",
+    "static/media/service-1.jpg": "/fitness-final-project/static/media/service-1.e58ed22335affd3d4b2e.jpg",
+    "static/media/gym2.png": "/fitness-final-project/static/media/gym2.85c51c911baad8bc8077.png",
+    "static/media/fitman.png.jpg": "/fitness-final-project/static/media/fitman.png.e1aae7dfb9129914841f.jpg",
+    "static/media/gym3.png": "/fitness-final-project/static/media/gym3.5bab44a254def1f290e0.png",
+    "static/media/service-4.jpg": "/fitness-final-project/static/media/service-4.bbfed676ab025e8b354a.jpg",
+    "static/media/goalsetting.png": "/fitness-final-project/static/media/goalsetting.d0e686bc4c1516d6ca93.png",
+    "static/media/josh-oliver.png": "/fitness-final-project/static/media/josh-oliver.b951644e2beee0331f2f.png",
+    "static/media/MACRONUTRIENTCALCULATOR.png": "/fitness-final-project/static/media/MACRONUTRIENTCALCULATOR.019dc8e2b0cdc159b4b0.png",
+    "static/media/BMIcalculator.png": "/fitness-final-project/static/media/BMIcalculator.b6807a6532993321c25a.png",
+    "static/media/caloriecalculator.png": "/fitness-final-project/static/media/caloriecalculator.bfec20a3082dc47d7b3c.png",
+    "static/media/edward-hawley.png": "/fitness-final-project/static/media/edward-hawley.4c66970763ad6d650bdf.png",
+    "index.html": "/fitness-final-project/index.html",
+    "main.19cdedd3.css.map": "/fitness-final-project/static/css/main.19cdedd3.css.map",
+    "main.a82caf58.js.map": "/fitness-final-project/static/js/main.a82caf58.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.19cdedd3.css",
+    "static/js/main.a82caf58.js"
+  ]
+}
