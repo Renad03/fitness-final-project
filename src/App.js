@@ -24,7 +24,7 @@ import AccordionSection from "./Components/Accordion/AccordionSection";
 import OurServices from "./Components/ServicesSection/OurServices";
 import OneOnOneCoaching from "./Components/OneOnOneCoaching";
 import GroupCoaching from "./Components/GroupCoaching";
-
+import MemberShip from "./Components/Membership";
 
 const routes = createBrowserRouter([
   {
@@ -32,7 +32,7 @@ const routes = createBrowserRouter([
     element: <Layout />,
     children: [
       {
-        path: "",
+        path: "home",
         element: <Home />,
       },
       {
@@ -94,6 +94,10 @@ const routes = createBrowserRouter([
       {
         path: "group-coaching",
         element: <GroupCoaching />,
+      },
+      {
+        path: "membership",
+        element: <MemberShip />,
       }
     ],
   },
