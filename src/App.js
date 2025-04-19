@@ -2,6 +2,8 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
 import "./App.css";
 import Home from "./Pages/Home/Home";
+import 'bootstrap-icons/font/bootstrap-icons.css';
+
 import {
   createBrowserRouter,
   createHashRouter,
