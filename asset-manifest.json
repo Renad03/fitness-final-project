@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/fitness-final-project/static/css/main.19cdedd3.css",
-    "main.js": "/fitness-final-project/static/js/main.a82caf58.js",
+    "main.js": "/fitness-final-project/static/js/main.17f78d02.js",
     "static/media/gym-training.png": "/fitness-final-project/static/media/gym-training.d6b11bd9344c819dcbee.png",
     "static/media/fitness-group.png": "/fitness-final-project/static/media/fitness-group.4c274eb0054c86c627ac.png",
     "static/media/nutrition-coaching.png": "/fitness-final-project/static/media/nutrition-coaching.712ddcb02cf932449347.png",
@@ -29,10 +29,10 @@
     "static/media/edward-hawley.png": "/fitness-final-project/static/media/edward-hawley.4c66970763ad6d650bdf.png",
     "index.html": "/fitness-final-project/index.html",
     "main.19cdedd3.css.map": "/fitness-final-project/static/css/main.19cdedd3.css.map",
-    "main.a82caf58.js.map": "/fitness-final-project/static/js/main.a82caf58.js.map"
+    "main.17f78d02.js.map": "/fitness-final-project/static/js/main.17f78d02.js.map"
   },
   "entrypoints": [
     "static/css/main.19cdedd3.css",
-    "static/js/main.a82caf58.js"
+    "static/js/main.17f78d02.js"
   ]
 }
