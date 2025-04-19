@@ -25,6 +25,8 @@ import OurServices from "./Components/ServicesSection/OurServices";
 import OneOnOneCoaching from "./Components/OneOnOneCoaching";
 import GroupCoaching from "./Components/GroupCoaching";
 import MemberShip from "./Components/Membership";
+import OnlineCoaching from "./Components/OnlineCoaching";
+import NutritionCoaching from "./Components/NutritionCoaching";
 
 const routes = createBrowserRouter([
   {
@@ -98,6 +100,14 @@ const routes = createBrowserRouter([
       {
         path: "membership",
         element: <MemberShip />,
+      },
+      {
+        path: "online-coaching",
+        element: <OnlineCoaching />,
+      },
+      {
+        path: "nutrition-coaching",
+        element: <NutritionCoaching />,
       }
     ],
   },
