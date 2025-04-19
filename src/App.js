@@ -30,7 +30,7 @@ import MemberShip from "./Components/Membership";
 import OnlineCoaching from "./Components/OnlineCoaching";
 import NutritionCoaching from "./Components/NutritionCoaching";
 
-const routes = createBrowserRouter([
+const routes = createHashRouter([
   {
     path: "/",
     element: <Layout />,
